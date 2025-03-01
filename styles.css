@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: cornflowerblue;
+    height: 100vh;
+}
+
+.card {
+    border-radius: 10px;
+    width: 350px;
+    background-color: white;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.card-img {
+    width: 200px;  /* Set a fixed width */
+    height: 200px; /* Set a fixed height */
+    border-radius: 50%; /* Make it a perfect circle */
+    object-fit: cover; /* Ensures the image fits inside without distortion */
+    display: block;
+    margin: 0 auto; /* Centers the image */
+    object-position: center top; /* Adjusts which part of the image is shown */
+
+}
+
+
+.card h1 {
+    font-size: 30px;
+    margin: 10px 0;
+}
+
+.card h5 {
+    font-size: 20px;
+    color: red;
+    margin-bottom: 20px;
+}
+
+.card button {
+    background-color: skyblue;
+    color: #fff;
+    font-weight: 700;
+    padding: 12px 20px;
+    border-radius: 5px;
+    border: none;
+    margin: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+.card button:hover {
+    background-color: deepskyblue;
+}
+
+.card #remove {
+    background-color: black;
+}
+
+.card #remove:hover {
+    background-color: darkgray;
+}

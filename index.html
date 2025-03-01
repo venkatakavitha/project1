@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <link rel="stylesheet" href="styles.css">
+  <script>
+        
+  </script>
+
+</head>
+<body>
+    <div class="card">
+        <img class="card-img" src="C:\Users\HP\Desktop\html\Virat-Kohli-Practice (1).jpg" style="border-radius: 50%;" alt="Profile Picture"> 
+        <h1>Virat</h1>
+        <h5>Stranger</h5>
+        <div id="btn-container">
+            <button id="remove">Unfriend</button>
+            <button id="add">Add Friend</button>
+        </div> 
+    </div>
+<script>
+let text = document.querySelector("h5")
+let removeButton = document.querySelector("#remove")
+let addButton = document.querySelector("#add")
+
+ removeButton.addEventListener("click",(e)=>{
+    text.textContent = "Stranger"
+})
+
+addButton.addEventListener("click",(e)=>{
+    text.textContent = "Friends"
+    text.style.color="green"
+    text.style.border="10px solid black"
+})
+
+
+</script>
+
+
+
+
+
+
+    <!-- <script>
+        var stat = document.querySelector("h5"); // Select using ID for better accuracy
+        var addFriend = document.querySelector("#add");
+        var unFriend = document.querySelector("#remove");
+
+        addFriend.addEventListener("click", function(){
+            stat.innerHTML = "Friends";
+            stat.style.color = "green";
+        });
+
+        unFriend.addEventListener("click", function(){
+            stat.innerHTML = "Stranger";
+            stat.style.color = "red";
+        });
+    </script> -->
+
+    <!-- <script src="./solution.js" onclick=""></script> -->
+</body>
+</html>
